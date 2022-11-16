@@ -45,8 +45,11 @@ body {
 /************************** Header styles start **********************/
 
 .site-header {
+  width: 100%;
+  position: fixed;
   background: #ffffff;
   border-bottom: 1px solid #eeeef4;
+  top: 0;
 }
 .container {
   max-width: 1256px;
@@ -133,4 +136,70 @@ body {
 }
 /************************** Header styles end **********************/
 
+/************************** Main styles start ***********************/
 
+/* Hero section styles start */
+.hero-section {
+  margin-top: 180px;
+  background-color: #fff;
+}
+.hero-section-wrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.hero-section-wrapper-start {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 550px;
+}
+.hero-section-title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 140%;
+  color: var(--text-color);
+}
+.hero-section-desc {
+  color: #636f87;
+  margin-bottom: 40px;
+}
+.hero-section-btn {
+  display: inline-block;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 120%;
+  padding: 20px 40px 20px 40px;
+  text-align: center;
+  color: var(--color);
+  text-decoration: none;
+  background-color: var(--hover-text-color);
+  border-radius: 6px;
+}
+
+.hero-section-btn:hover {
+  background-color: var(--color);
+  color: var(--hover-text-color);
+  border: 1.5px solid var(--hover-text-color);
+  border-radius: 6px;
+}
+
+.hero-section-btn:active {
+    background-color: var(--hover-text-color);
+    opacity: 0.6;
+    color: var(--color);
+    border: 1.5px solid var(--hover-text-color);
+    border-radius: 6px;
+}
+
+.hero-section-video{
+    width: 592px;
+    height: 334px;
+    border: none;
+    border-radius: 6px;
+}
+/* Hero section styles end */
+
+/************************** Main styles end ***********************/
