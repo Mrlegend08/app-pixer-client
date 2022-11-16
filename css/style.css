@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  transition: all 0.1s linear;
+  transition: all 0.2s linear;
 }
 
 @font-face {
@@ -228,16 +228,19 @@ body {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 32px;
   padding-left: 0;
   list-style: none;
 }
 .how-can-we-help-you-section-item {
   width: 384px;
   margin-bottom: 32px;
+  margin-right: 32px;
   border: 2px solid #e1e7ed;
   border-radius: 6px;
   padding: 40px 30px 40px 30px;
+}
+.how-can-we-help-you-section-item:nth-child(3) {
+  margin-right: 0;
 }
 .how-can-we-help-you-section-subtitle-wrapper {
   display: flex;
@@ -316,5 +319,108 @@ body {
 }
 
 /* How can we help you section styles end */
+
+/* How do we work section styles start */
+
+.how-do-we-work-section {
+  background-color: var(--color);
+  padding: 100px 0 150px 0;
+}
+.how-do-we-work-section-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  /* align-items: flex-start; */
+}
+.how-do-we-work-section-top-desc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  width: 650px;
+  margin-bottom: 90px;
+}
+.how-do-we-work-section-title {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 140%;
+  text-align: center;
+  color: var(--text-color);
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+.how-do-we-work-section-desc {
+  text-align: center;
+  color: var(--how-can-we-help-you-text-color);
+}
+.how-do-we-work-section-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  padding-left: 0;
+}
+.how-do-we-work-section-item {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-bottom: 100px;
+}
+.how-do-we-work-section-item:nth-child(embed) {
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+.how-do-we-work-section-img {
+  width: 488px;
+  height: 390px;
+  margin-right: 32px;
+}
+.how-do-we-work-section-item:nth-child(embed) > .how-do-we-work-section-img{
+  margin-right: 0;
+  margin-left: 32px;
+} 
+
+.item-box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 488px;
+  padding-top: 24px;
+}
+
+.how-do-we-work-section-item:nth-child(even) > .item-box{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-top: 62px;
+  width: 592px;
+}
+.item-box-title {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 140%;
+  margin: 0;
+  color: var(--text-color);
+}
+.how-do-we-work-section-item:nth-child(even) > .item-box > .item-box-title{
+  width: 488px;
+  margin: 0;
+}
+.item-box-desc {
+  color: var(--how-can-we-help-you-text-color);
+}
+
+.how-do-we-work-section-item:nth-child(even) > .item-box > .item-box-desc{
+  margin-right: 32px;
+}
+
+.how-do-we-work-section-item:last-child{
+  margin-bottom: 0;
+}
+/* How do we work section styles send */
 
 /************************** Main styles end ***********************/
