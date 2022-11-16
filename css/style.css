@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  transition: all 0.2s linear;
+  transition: hover active 0.2s linear;
 }
 
 @font-face {
@@ -22,11 +22,21 @@
 }
 body {
   margin: 0;
-  font-family: "Plus Jakarta Sans";
+  font-family: "Plus Jakarta Sans" sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 150%;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
 }
 
 .visually-hidden {
@@ -379,10 +389,10 @@ body {
   height: 390px;
   margin-right: 32px;
 }
-.how-do-we-work-section-item:nth-child(embed) > .how-do-we-work-section-img{
+.how-do-we-work-section-item:nth-child(embed) > .how-do-we-work-section-img {
   margin-right: 0;
   margin-left: 32px;
-} 
+}
 
 .item-box {
   display: flex;
@@ -392,7 +402,7 @@ body {
   padding-top: 24px;
 }
 
-.how-do-we-work-section-item:nth-child(even) > .item-box{
+.how-do-we-work-section-item:nth-child(even) > .item-box {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -406,7 +416,7 @@ body {
   margin: 0;
   color: var(--text-color);
 }
-.how-do-we-work-section-item:nth-child(even) > .item-box > .item-box-title{
+.how-do-we-work-section-item:nth-child(even) > .item-box > .item-box-title {
   width: 488px;
   margin: 0;
 }
@@ -414,13 +424,148 @@ body {
   color: var(--how-can-we-help-you-text-color);
 }
 
-.how-do-we-work-section-item:nth-child(even) > .item-box > .item-box-desc{
+.how-do-we-work-section-item:nth-child(even) > .item-box > .item-box-desc {
   margin-right: 32px;
 }
 
-.how-do-we-work-section-item:last-child{
+.how-do-we-work-section-item:last-child {
   margin-bottom: 0;
 }
-/* How do we work section styles send */
+/* How do we work section styles end */
 
+/* Leave your number styles start */
+
+.leave-your-number-section {
+  padding-bottom: 200px;
+}
+.leave-your-number-section-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-content: space-between;
+  margin: 0;
+}
+.leave-your-number-section-full-desc {
+  display: flex;
+  flex-direction: column;
+}
+.leave-your-number-section-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 140%;
+  margin: 0 auto;
+  width: 411px;
+  text-align: center;
+  color: var(--text-color);
+  margin-bottom: 16px;
+}
+.leave-your-number-section-desc {
+  width: 650px;
+  margin: 0 auto;
+  margin-bottom: 60px;
+  text-align: center;
+  color: var(--how-can-we-help-you-text-color);
+}
+.form {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 1008px;
+  padding-left: 312px;
+  padding-right: 312px;
+  padding-top: 64px;
+  padding-bottom: 64px;
+  background-color: #f2f4f6;
+  border-radius: 6px;
+}
+.name::placeholder {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 25px;
+  color: var(--text-color);
+}
+.name {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 25px;
+  padding-bottom: 21px;
+  background-color: transparent;
+  color: var(--text-color);
+  border-top: none;
+  border-right: none;
+  border-bottom: 1px solid var(--how-can-we-help-you-text-color);
+  border-left: none;
+  outline: none;
+  margin-bottom: 51px;
+}
+.number::placeholder {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 25px;
+  color: var(--text-color);
+}
+.number {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 25px;
+  padding-bottom: 21px;
+  background-color: transparent;
+  color: var(--text-color);
+  border-top: none;
+  border-right: none;
+  border-bottom: 1px solid var(--how-can-we-help-you-text-color);
+  border-left: none;
+  outline: none;
+  margin-bottom: 51px;
+}
+.select {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 25px;
+  padding-bottom: 21px;
+  background-color: transparent;
+  color: var(--text-color);
+  border-top: none;
+  border-right: none;
+  border-bottom: 1px solid var(--how-can-we-help-you-text-color);
+  border-left: none;
+  outline: none;
+  margin-bottom: 51px;
+}
+
+.leave-your-number-btn {
+  width: 180px;
+  padding: 20px 69.5px;
+  margin: 0 auto;
+  background: var(--hover-text-color);
+  border-radius: 6px;
+  border: none;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 120%;
+  text-align: center;
+  color: var(--color);
+}
+
+.leave-your-number-btn:hover {
+  background-color: var(--color);
+  color: var(--hover-text-color);
+  border: 1.5px solid var(--hover-text-color);
+  border-radius: 6px;
+}
+.leave-your-number-btn:active {
+  background-color: var(--hover-text-color);
+  opacity: 0.6;
+  color: var(--color);
+  border: 1.5px solid var(--hover-text-color);
+  border-radius: 6px;
+}
+.leave-your-number-btn-bottom-desc {
+  margin-top: 24px;
+  text-align: center;
+  color: #858ea2;
+}
+
+/* Leave your number styles end */
 /************************** Main styles end ***********************/
